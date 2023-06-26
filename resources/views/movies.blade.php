@@ -10,8 +10,8 @@
                 <div class="card" style="width: 18rem;">
                     <img src="{{ Vite::asset('/resources/img/' . $movie->img) }}" class="card-img-top" alt="">
                     <div class="card-body">
-                        <h5 class="card-title text-danger">{{ $movie->original_title }}</h5>
-                        <p class="card-text text-danger">{{ $movie->date }}</p>
+                        <h5 class="card-title">{{ $movie->original_title }}</h5>
+                        <p class="card-text">{{ $movie->date }}</p>
                         <a href="#" class="btn btn-primary">More</a>
                     </div>
                 </div>

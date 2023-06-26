@@ -41,9 +41,7 @@ img {
     object-fit: cover;
 }
 
-
-  
-  .card {
+.card {
     position: relative;
     width: 190px;
     height: 400px;
@@ -51,11 +49,14 @@ img {
     justify-content: center;
     align-items: center;
     margin: 10px;
-    overflow: hidden; /* Aggiunta per nascondere l'overflow durante l'animazione */
-  }
-  
-  
-  .card .card-body {
+    overflow: hidden;
+}
+
+.card:hover img {
+    opacity: 0; 
+}
+
+.card .card-body {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -63,21 +64,25 @@ img {
     opacity: 0;
     transition: 0.3s;
     text-align: center;
-  }
-  
-  .card:hover .card-body {
+}
+
+.card:hover .card-body {
     opacity: 1;
-  }
-  
-  .card:hover h5, .card:hover p {
+}
+
+.card:hover h5,
+.card:hover p {
     transform: translateX(0);
     opacity: 1;
-  }
-  
-  .card h5, .card p {
+}
+
+.card h5,
+.card p {
     transform: translateX(-100%);
     opacity: 0;
     transition: 0.3s;
-  }
+}
+
+
   
 
