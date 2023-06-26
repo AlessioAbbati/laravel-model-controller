@@ -12,7 +12,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ $movie->title }}</h5>
                         <p class="card-text">{{ $movie->date }}</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary">More</a>
                     </div>
                 </div>
             </div>
