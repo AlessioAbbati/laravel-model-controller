@@ -7,7 +7,17 @@
         @vite('resources/js/app.js')
     </head>
     <body>
-        <h1 class="text-center">Ciao da vite</h1>
         {{-- <img src="{{ Vite::asset('resources/img/picsum30.jpg') }}" alt=""> --}}
+
+        @include('partials.header')
+        
+        <div class="container">
+            <main>
+                @yield('contents')
+            </main>
+        </div>
+       
+        @include('partials.footer')
+    </body>
     </body>
 </html>
