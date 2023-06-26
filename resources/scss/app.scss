@@ -1,5 +1,83 @@
 @import "~bootstrap/scss/bootstrap";
 
+body {
+    background-color: black;
+}
+
 h1 {
     color: red;
 }
+
+h2 {
+    color: red;
+}
+
+.movies {
+    max-width: 1000px;
+    margin: auto;
+    overflow: auto;
+}
+
+.movies::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+}
+
+.movies::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.movies::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 5px;
+}
+
+.col {
+    padding-inline: .5rem;
+}
+
+img {
+    height: 400px;
+    object-fit: cover;
+}
+
+
+  
+  .card {
+    position: relative;
+    width: 190px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    overflow: hidden; /* Aggiunta per nascondere l'overflow durante l'animazione */
+  }
+  
+  
+  .card .card-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.3s;
+    text-align: center;
+  }
+  
+  .card:hover .card-body {
+    opacity: 1;
+  }
+  
+  .card:hover h5, .card:hover p {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .card h5, .card p {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 0.3s;
+  }
+  
+
