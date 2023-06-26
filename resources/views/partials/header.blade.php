@@ -1,7 +1,7 @@
 <header>
 
     <div class="container">
-        <h1>Top Rated Movies</h1>
+        <h1 class="text-center">Top Rated Movies</h1>
     </div>
     
 </header>
